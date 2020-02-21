@@ -8,7 +8,7 @@ public class Calculadora {
 		
 		do{
 			option = Integer.parseInt(JOptionPane.showInputDialog("Escolha:" +"\n"+"0 - sair"+"\n"+""1 - soma""+
-"\n"+"2 - subtração"));
+"\n"+"2 - subtração"+"\n"+"3 - multiplicação"+"\n"+"4 - divisão"));
 			
 			if(option == 1) {
 				firstNum = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero"));
@@ -22,6 +22,20 @@ public class Calculadora {
 				secondNum = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero"));
 				result = firstNum - secondNum;
 				JOptionPane.showMessageDialog(null, "O resultado da subtração é " + result);
+			}
+
+			if(option == 3) {
+				firstNum = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero"));
+				secondNum = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero"));
+				result = firstNum * secondNum;
+				JOptionPane.showMessageDialog(null, "O resultado da multiplicaçãoé " + result);
+			}
+
+			if(option == 4) {
+				firstNum = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero"));
+				secondNum = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero"));
+				result = firstNum/secondNum;
+				JOptionPane.showMessageDialog(null, "O resultado da divisão é " + result);
 			}
 		}while(option != 0);
 
