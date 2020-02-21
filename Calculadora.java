@@ -3,11 +3,12 @@ import javax.swing.JOptionPane;
 public class Calculadora {
 
 	public static void main(String[] args) {
-		int firstNum, secondNum, option, result;
+		double firstNum, secondNum, result;
+		int option;
 		
 		
 		do{
-			option = Integer.parseInt(JOptionPane.showInputDialog("Escolha:" +"\n"+"0 - sair"+"\n"+""1 - soma""+
+			option = Integer.parseInt(JOptionPane.showInputDialog("Escolha:" +"\n"+"0 - sair"+"\n"+"1 - soma"+
 "\n"+"2 - subtração"+"\n"+"3 - multiplicação"+"\n"+"4 - divisão"));
 			
 			if(option == 1) {
